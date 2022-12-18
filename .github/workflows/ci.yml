@@ -45,7 +45,7 @@ jobs:
         with:
           submodules: recursive
       - run: node --version
-      - run: npm --version
+      - run: npm install -g npm
       - run: npm install esy
       - run: npx esy install
       - run: npx esy build
